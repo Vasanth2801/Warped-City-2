@@ -62,6 +62,7 @@ public class Player : MonoBehaviour
 
     void HandleAnimations()
     {
+       
         animator.SetFloat("Speed", Mathf.Abs(moveInput));
         animator.SetBool("isJumping", rb.linearVelocity.y > 0.1);
     }
